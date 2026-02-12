@@ -1,0 +1,16 @@
+[workspace]
+authors = ["dknom <dknomura@gmail.com>"]
+channels = ["conda-forge"]
+name = "ds_scratch"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+numpy = ">=2.4.2,<3"
+pandas = ">=3.0.0,<4"
+jupyter = ">=1.1.1,<2"
+plotly = ">=6.5.2,<7"
+ipykernel = ">=7.2.0,<8"
+pip = ">=26.0.1,<27"
