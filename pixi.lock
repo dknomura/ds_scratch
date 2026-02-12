@@ -95,9 +95,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/mkl-2025.3.0-hac47afa_455.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/narwhals-2.16.0-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nbclient-0.10.4-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-7.17.0-h14065e2_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-core-7.17.0-pyhcf101f3_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-pandoc-7.17.0-hc3985f0_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nbformat-5.10.4-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/nodejs-22.21.1-he453025_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-7.5.3-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-shim-0.2.4-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/numpy-2.4.2-py314h06c3c77_1.conda
@@ -105,10 +108,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/overrides-7.7.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-26.0-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/pandas-3.0.0-py314hf700ef7_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/pandoc-3.9-h57928b3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pandocfilters-1.5.0-pyhd8ed1ab_0.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/noarch/parso-0.8.6-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/pip-26.0.1-pyh145f28c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/platformdirs-4.5.1-pyhcf101f3_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/win-64/playwright-1.58.2-h9acf6c7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/plotly-6.5.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/prometheus_client-0.24.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/prompt-toolkit-3.0.52-pyha770c72_0.conda
@@ -1258,6 +1263,16 @@ packages:
   license_family: BSD
   size: 28473
   timestamp: 1766485646962
+- conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-7.17.0-h14065e2_0.conda
+  sha256: 3ed26e517968d16c8d6e52b20d9fbfc321d08975293e0ea27272e90c20797278
+  md5: b591fa5e68163b7f384ec58e8b319ace
+  depends:
+  - nbconvert-core ==7.17.0 pyhcf101f3_0
+  - nbconvert-pandoc ==7.17.0 hc3985f0_0
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 5298
+  timestamp: 1769709543558
 - conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-core-7.17.0-pyhcf101f3_0.conda
   sha256: 628fea99108df8e33396bb0b88658ec3d58edf245df224f57c0dce09615cbed2
   md5: b14079a39ae60ac7ad2ec3d9eab075ca
@@ -1286,6 +1301,16 @@ packages:
   license_family: BSD
   size: 202284
   timestamp: 1769709543555
+- conda: https://conda.anaconda.org/conda-forge/noarch/nbconvert-pandoc-7.17.0-hc3985f0_0.conda
+  sha256: 79cb6a9089b3f15ebbd6a1520b2dcf83115cb2f61beaf9755ae21c38263c391f
+  md5: c9f0737797df2446be07b340c7992d5e
+  depends:
+  - nbconvert-core ==7.17.0 pyhcf101f3_0
+  - pandoc
+  license: BSD-3-Clause
+  license_family: BSD
+  size: 5765
+  timestamp: 1769709543558
 - conda: https://conda.anaconda.org/conda-forge/noarch/nbformat-5.10.4-pyhd8ed1ab_1.conda
   sha256: 7a5bd30a2e7ddd7b85031a5e2e14f290898098dc85bea5b3a5bf147c25122838
   md5: bbe1963f1e47f594070ffe87cdf612ea
@@ -1308,6 +1333,13 @@ packages:
   license_family: BSD
   size: 11543
   timestamp: 1733325673691
+- conda: https://conda.anaconda.org/conda-forge/win-64/nodejs-22.21.1-he453025_2.conda
+  sha256: a05abc4cac947ba46d0b19218d0b6f7bbac44ea219c6a4ab99cde34d73c91092
+  md5: 890ec0e25cbf410a37a6266dcb2b1152
+  license: MIT
+  license_family: MIT
+  size: 29798836
+  timestamp: 1770623015683
 - conda: https://conda.anaconda.org/conda-forge/noarch/notebook-7.5.3-pyhcf101f3_0.conda
   sha256: 014cf291843861b20cf84a89e8450f0dd13ad1e6d2ab30c56ae43b81f2dca233
   md5: 94a5f0cee51b6b0ffdcad0af6db0af18
@@ -1440,6 +1472,13 @@ packages:
   license_family: BSD
   size: 14005537
   timestamp: 1769076350929
+- conda: https://conda.anaconda.org/conda-forge/win-64/pandoc-3.9-h57928b3_0.conda
+  sha256: e017966c0188c09dc0d5c898525966cad7f1a5b716ecd514f13d4e1dd372f929
+  md5: 731af1f346cb3f8f1243790f2165d851
+  license: GPL-2.0-or-later
+  license_family: GPL
+  size: 26783378
+  timestamp: 1770211847038
 - conda: https://conda.anaconda.org/conda-forge/noarch/pandocfilters-1.5.0-pyhd8ed1ab_0.tar.bz2
   sha256: 2bb9ba9857f4774b85900c2562f7e711d08dd48e2add9bee4e1612fbee27e16f
   md5: 457c2c8c08e54905d6954e79cb5b5db9
@@ -1478,6 +1517,16 @@ packages:
   license_family: MIT
   size: 23922
   timestamp: 1764950726246
+- conda: https://conda.anaconda.org/conda-forge/win-64/playwright-1.58.2-h9acf6c7_0.conda
+  sha256: 99cc1d9a35f45d48eff393b886ea102163e9810038c0a53b8f3c9e485b4aa2f7
+  md5: e9a4f2bd728158b0dab98eb4c2a4d0d6
+  depends:
+  - nodejs
+  - nodejs >=22.21.1,<23.0a0
+  license: Apache-2.0
+  license_family: APACHE
+  size: 2345535
+  timestamp: 1770404358542
 - conda: https://conda.anaconda.org/conda-forge/noarch/plotly-6.5.2-pyhd8ed1ab_0.conda
   sha256: 48d2caf66b8209bfb3fa160f5bc7cbd625deaa4826e8aa1bad706b2dd22bbb86
   md5: 7702bcd70891dd0154d765a69e1afa94
