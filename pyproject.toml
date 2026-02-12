@@ -1,0 +1,16 @@
+[project]
+name = "ds-scratch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "jupyter>=1.1.1",
+    "kaleido>=1.2.0",
+    "nbconvert>=7.17.0",
+    "numpy>=2.4.2",
+    "pandas>=3.0.0",
+    "pip>=26.0.1",
+    "plotly>=6.5.2",
+]
